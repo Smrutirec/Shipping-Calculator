@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>FastShip</h1>
+    <p>Shipping Cost Calculator</p>
+</header>
+
+<main>
+    <section class="calculator">
+
+        <h2>Calculate Your Shipping Cost</h2>
+
+        <form id="shippingForm">
+
+            <label>Sender Name</label>
+            <input type="text" id="sender"
+                placeholder="Enter sender name" required>
+
+            <label>Receiver Name</label>
+            <input type="text" id="receiver"
+                placeholder="Enter receiver name" required>
+
+            <label>Parcel Weight (kg)</label>
+            <input type="number" id="weight"
+                placeholder="Enter parcel weight"
+                min="0.1" step="0.1" required>
+
+            <label>Delivery Distance (km)</label>
+            <input type="number" id="distance"
+                placeholder="Enter distance"
+                min="1" step="1" required>
+
+            <label>Shipping Method</label>
+            <select id="shippingType" required>
+                <option value="standard">Standard Delivery</option>
+                <option value="express">Express Delivery</option>
+                <option value="overnight">Overnight Delivery</option>
+            </select>
+
+            <button type="submit">Calculate Shipping</button>
+
+            <button type="reset" class="reset">
+                Reset
+            </button>
+
+        </form>
+
+        <div id="result" class="result" hidden>
+            <h2>Shipping Details</h2>
+
+            <p id="resultSender"></p>
+            <p id="resultReceiver"></p>
+            <p id="resultWeight"></p>
+            <p id="resultDistance"></p>
+            <p id="resultMethod"></p>
+            <p id="resultDelivery"></p>
+            <p id="resultBase"></p>
+            <p id="resultDiscount"></p>
+
+            <h3 id="finalCost"></h3>
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 FastShip | Shipping Calculator</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

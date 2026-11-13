@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef3f9;
+    color: #333;
+}
+
+header {
+    background: #12345a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+main {
+    width: 90%;
+    max-width: 650px;
+    margin: 35px auto;
+}
+
+.calculator {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000015;
+}
+
+h2 {
+    color: #12345a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #2874a6;
+    border-color: #2874a6;
+}
+
+button {
+    background: #167d58;
+    color: white;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+button:hover {
+    background: #105c40;
+}
+
+.reset {
+    background: #d9534f;
+}
+
+.reset:hover {
+    background: #b52b27;
+}
+
+.result {
+    background: #eaf7ef;
+    border: 1px solid #b6dfc3;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 8px;
+}
+
+.result h2 {
+    color: #167d58;
+}
+
+.result p {
+    padding: 7px 0;
+    border-bottom: 1px solid #d4e7d9;
+}
+
+#finalCost {
+    color: #167d58;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+footer {
+    background: #12345a;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+    }
+
+    .calculator {
+        padding: 18px;
+    }
+}
