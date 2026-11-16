@@ -133,12 +133,23 @@ footer {
 
 
 footer {
-    background: #12345a;
+    background: #22e105;
     color: white;
-    text-align: center;
-    padding: 18px;
-    margin-top: 40px;
+    text-align: left;
+    padding: 28px;
+    margin-top: 50px;
+    
+
 }
 
 
+footer {
+    background: #22e105;
+    color: white;
+    text-align: left;
+    padding: 28px;
+    margin-top: 50px;
+    
+
+}
 
